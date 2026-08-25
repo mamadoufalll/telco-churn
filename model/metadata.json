@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "date_entrainement": "2026-08-25",
+  "modele": "LogisticRegression (max_iter=2000)",
+  "features_derivees": {
+    "tenure_bucket": true
+  },
+  "seuil_decision": 0.1026,
+  "couts_metier": {
+    "faux_negatif_eur": 350.0,
+    "faux_positif_eur": 40.0
+  },
+  "colonnes_attendues": [
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "n_train": 5634,
+  "n_test": 1409,
+  "taux_churn_train": 0.2654,
+  "performances_test": {
+    "cout_metier_eur_par_client": 19.89,
+    "cout_baseline_naive": 92.9,
+    "roc_auc": 0.8452,
+    "auc_pr": 0.6503,
+    "brier": 0.1364,
+    "rappel": 0.9412,
+    "precision": 0.4093,
+    "f1": 0.5705,
+    "matrice_confusion": {
+      "VP": 352,
+      "FN": 22,
+      "FP": 508,
+      "VN": 527
+    },
+    "part_parc_ciblee": 0.6104
+  }
+}
